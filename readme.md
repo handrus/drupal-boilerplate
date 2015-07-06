@@ -18,28 +18,26 @@ in that specific directory.
 Here's a breakdown for what each directory/file is used for. If you want to know more please
 read the readme inside the specific directory.
 
-* [docroot](https://github.com/TallerWebSolutions/drupal-boilerplate/tree/master/docroot)
- * Where your drupal root should start.
- * The settings.php is not ignored by the GIT, it's expected to use an include file, like: settings.local.php
-   where all the local configurations will be.
-* [drush](https://github.com/TallerWebSolutions/drupal-boilerplate/tree/master/drush)
+* [drush](https://github.com/TallerWebSolutions/drupal-boilerplate/tree/kraftwagen/drush)
  * Contains project specific drush commands, aliases, and configurations.
-* [results](https://github.com/TallerWebSolutions/drupal-boilerplate/tree/master/results)
+* [results](https://github.com/TallerWebSolutions/drupal-boilerplate/tree/kraftwagen/results)
  * This directory is just used to export test results to. A good example of this
    is when running drush test-run with the --xml option. You can export the xml
    to this directory for parsing by external tools.
-* [scripts](https://github.com/TallerWebSolutions/drupal-boilerplate/tree/master/scripts)
+* [scripts](https://github.com/TallerWebSolutions/drupal-boilerplate/tree/kraftwagen/scripts)
  * A directory for project-specific scripts.
-* [tests](https://github.com/TallerWebSolutions/drupal-boilerplate/tree/master/tests)
+* [tests](https://github.com/TallerWebSolutions/drupal-boilerplate/tree/kraftwagen/tests)
  * A directory for external tests. This is great for non drupal specific tests
  such as selenium, qunit, casperjs or cucumber.
-* [databases](https://github.com/TallerWebSolutions/drupal-boilerplate/blob/master/databases)
+* [databases](https://github.com/TallerWebSolutions/drupal-boilerplate/blob/kraftwagen/databases)
  * The databases directory is used to place dumps from the persistant storages like MySQL,
  MongoDB and others, used for the initial boot in new environments.
-* [configs](https://github.com/TallerWebSolutions/drupal-boilerplate/blob/master/configs)
+* [configs](https://github.com/TallerWebSolutions/drupal-boilerplate/blob/kraftwagen/configs)
  * The configs directory is used to place configurations of other softwares like Apache Solr,
  Redis, MongoDB and others.
-* [.gitignore](https://github.com/TallerWebSolutions/drupal-boilerplate/blob/master/.gitignore)
+* [.gitignore](https://github.com/TallerWebSolutions/drupal-boilerplate/blob/kraftwagen/.gitignore)
  * Contains the a list of the most common excluded files.
+* [Kraftwagenrc](https://github.com/TallerWebSolutions/drupal-boilerplate/blob/kraftwagen/kraftwagenrc.php)
+ * Contains configurations to use Kraftwagen, by default only overwrite the dir build to docroot in order to provide easier integration with Acquia.
 
 Built by Robots&trade;
