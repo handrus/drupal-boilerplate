@@ -1,43 +1,34 @@
 #Drupal Boilerplate#
 -
 
-Drupal boilerplate is not a module. Instead it just serves as a directory structure for
-starting a new drupal site. The idea behind Drupal boilerplate came from working on so many
-different sites which each follow their own development practice, directory structure,
-deployment guidelines, etc...
+Drupal boilerplate não é um módulo. Em vez disso, apenas serve como uma estrutura de diretórios para iniciar um novo site Drupal. A idéia por trás Drupal boilerplate veio de trabalhar em tantos sites diferentes, cada um seguindo suas práticas de desenvolvimento, estrutura de diretórios, diretrizes de implantação, etc ...
 
-Drupal boilerplate tries to simplify starting a new site by having the most common
-directory structures and files already included and set up.
+Drupal boilerplate tenta simplificar o início de um novo site fornecendo a estrutura de diretórios comum e arquivos já incluídos e configurados.
 
-##Getting started##
-You can start by [downloading](https://github.com/TallerWebSolutions/drupal-boilerplate/zipball/master)
-this project. Once you download it you will find that every folder contains a readme.md file.
-This readme.md file has been extensively documented to explain what belongs
-in that specific directory.
+##Iniciando##
+Você pode iniciar [baixando](https://github.com/TallerWebSolutions/drupal-boilerplate/zipball/master)
+este projeto. Após baixa-lo cada diretório contem um arquivo readme.md.
+Este readme.md file contém uma extensa documentação explicando o que pertence ao diretório específico (Em inglês).
 
-Here's a breakdown for what each directory/file is used for. If you want to know more please
-read the readme inside the specific directory.
+Aqui temos uma descrição de uso de cada directorio/arquivo. Se você deseja saber mais por favor leia o readme dentro do diretório específico.
 
-* [drush](https://github.com/TallerWebSolutions/drupal-boilerplate/tree/kraftwagen/drush)
- * Contains project specific drush commands, aliases, and configurations.
-* [results](https://github.com/TallerWebSolutions/drupal-boilerplate/tree/kraftwagen/results)
- * This directory is just used to export test results to. A good example of this
-   is when running drush test-run with the --xml option. You can export the xml
-   to this directory for parsing by external tools.
-* [scripts](https://github.com/TallerWebSolutions/drupal-boilerplate/tree/kraftwagen/scripts)
- * A directory for project-specific scripts.
-* [tests](https://github.com/TallerWebSolutions/drupal-boilerplate/tree/kraftwagen/tests)
- * A directory for external tests. This is great for non drupal specific tests
- such as selenium, qunit, casperjs or cucumber.
-* [databases](https://github.com/TallerWebSolutions/drupal-boilerplate/blob/kraftwagen/databases)
- * The databases directory is used to place dumps from the persistant storages like MySQL,
- MongoDB and others, used for the initial boot in new environments.
-* [configs](https://github.com/TallerWebSolutions/drupal-boilerplate/blob/kraftwagen/configs)
- * The configs directory is used to place configurations of other softwares like Apache Solr,
- Redis, MongoDB and others.
-* [.gitignore](https://github.com/TallerWebSolutions/drupal-boilerplate/blob/kraftwagen/.gitignore)
- * Contains the a list of the most common excluded files.
-* [Kraftwagenrc](https://github.com/TallerWebSolutions/drupal-boilerplate/blob/kraftwagen/kraftwagenrc.php)
- * Contains configurations to use Kraftwagen, by default only overwrite the dir build to docroot in order to provide easier integration with Acquia.
+* [docroot](https://github.com/handrus/drupal-boilerplate/tree/master/docroot)
+ * A raiz da sua intalaçã Drupal.
+ * O arquivo settings.php não é ignorado pelo  git, é esperado que se use um arquivo de include, ex.: settings.local.php
+   aonde as configurações de ambiente devem estar.
+* [drush](https://github.com/handrus/drupal-boilerplate/tree/master/drush)
+ * Contém comandos, alias e configurações de drush específicas do projeto.
+* [results](https://github.com/handrus/drupal-boilerplate/tree/master/results)
+ * Este diretório é usado para exportar o resultado de testes. Um bom exemplo é quando é executado pareview.sh src/modules/custom/ > results/$(date +"%Y%m%d")_code.html. Você pode exportar o resultado de um teste para ser exibido ou parseado por outra ferramenta.
+* [scripts](https://github.com/handrus/drupal-boilerplate/tree/master/scripts)
+ * Diretório para scripts de automação de processos do projeto.
+* [tests](https://github.com/handrus/drupal-boilerplate/tree/master/tests)
+ * Diretório para testes externos. Excelente para testes não específicos do Drupal como selenium, qunit, caperjs ou cucumber.
+* [databases](https://github.com/handrus/drupal-boilerplate/blob/master/databases)
+ * Diretório usado para guardar dumps de bancos de dados como MySQL, MongoDB e outros, usado para o boot inicial de novos ambientes.
+* [configs](https://github.com/handrus/drupal-boilerplate/blob/master/configs)
+ * Configurações para softwares como Solr, Apache, MySQL etc. Preferencialmente utilizando Ansible, Puppet ou Chef.
+* [.gitignore](https://github.com/handrus/drupal-boilerplate/blob/master/.gitignore)
+ * Contém a lista de arquivos que normalmente deve ser ignorados pelo versionamento.
 
 Built by Robots&trade;

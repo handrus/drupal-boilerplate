@@ -1,8 +1,0 @@
-[database]
-default ansible_ssh_host=localhost
-
-[drupal]
-default ansible_ssh_host=localhost
-
-# [solr]
-# default ansible_ssh_host=localhost
