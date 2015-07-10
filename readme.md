@@ -12,23 +12,24 @@ Este readme.md file contém uma extensa documentação explicando o que pertence
 
 Aqui temos uma descrição de uso de cada directorio/arquivo. Se você deseja saber mais por favor leia o readme dentro do diretório específico.
 
-* [docroot](https://github.com/handrus/drupal-boilerplate/tree/master/docroot)
- * A raiz da sua intalaçã Drupal.
- * O arquivo settings.php não é ignorado pelo  git, é esperado que se use um arquivo de include, ex.: settings.local.php
+* [src](https://github.com/handrus/drupal-boilerplate/tree/kraftwagen/src)
+ * Aonde todo código desenvolvido para o projeto se encontrará
    aonde as configurações de ambiente devem estar.
-* [drush](https://github.com/handrus/drupal-boilerplate/tree/master/drush)
+* [drush](https://github.com/handrus/drupal-boilerplate/tree/kraftwagen/drush)
  * Contém comandos, alias e configurações de drush específicas do projeto.
-* [results](https://github.com/handrus/drupal-boilerplate/tree/master/results)
+* [results](https://github.com/handrus/drupal-boilerplate/tree/kraftwagen/results)
  * Este diretório é usado para exportar o resultado de testes. Um bom exemplo é quando é executado pareview.sh src/modules/custom/ > results/$(date +"%Y%m%d")_code.html. Você pode exportar o resultado de um teste para ser exibido ou parseado por outra ferramenta.
-* [scripts](https://github.com/handrus/drupal-boilerplate/tree/master/scripts)
+* [scripts](https://github.com/handrus/drupal-boilerplate/tree/kraftwagenr/scripts)
  * Diretório para scripts de automação de processos do projeto.
-* [tests](https://github.com/handrus/drupal-boilerplate/tree/master/tests)
+* [tests](https://github.com/handrus/drupal-boilerplate/tree/kraftwagen/tests)
  * Diretório para testes externos. Excelente para testes não específicos do Drupal como selenium, qunit, caperjs ou cucumber.
-* [databases](https://github.com/handrus/drupal-boilerplate/blob/master/databases)
+* [databases](https://github.com/handrus/drupal-boilerplate/blob/kraftwagen/databases)
  * Diretório usado para guardar dumps de bancos de dados como MySQL, MongoDB e outros, usado para o boot inicial de novos ambientes.
-* [configs](https://github.com/handrus/drupal-boilerplate/blob/master/configs)
+* [configs](https://github.com/handrus/drupal-boilerplate/blob/kraftwagen/configs)
  * Configurações para softwares como Solr, Apache, MySQL etc. Preferencialmente utilizando Ansible, Puppet ou Chef.
-* [.gitignore](https://github.com/handrus/drupal-boilerplate/blob/master/.gitignore)
+* [.gitignore](https://github.com/handrus/drupal-boilerplate/blob/kraftwagen/.gitignore)
  * Contém a lista de arquivos que normalmente deve ser ignorados pelo versionamento.
+* [Kraftwagenrc](https://github.com/TallerWebSolutions/drupal-boilerplate/blob/kraftwagen/kraftwagenrc.php)
+ * Contains configurations to use Kraftwagen, by default only overwrite the dir build to docroot in order to provide easier integration with Acquia.
 
 Built by Robots&trade;
