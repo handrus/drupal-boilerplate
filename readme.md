@@ -13,7 +13,7 @@ Este readme.md file contém uma extensa documentação explicando o que pertence
 Aqui temos uma descrição de uso de cada directorio/arquivo. Se você deseja saber mais por favor leia o readme dentro do diretório específico.
 
 * [docroot](https://github.com/handrus/drupal-boilerplate/tree/master/docroot)
- * A raiz da sua intalaçã Drupal.
+ * A raiz da sua intalação Drupal.
  * O arquivo settings.php não é ignorado pelo  git, é esperado que se use um arquivo de include, ex.: settings.local.php
    aonde as configurações de ambiente devem estar.
 * [drush](https://github.com/handrus/drupal-boilerplate/tree/master/drush)
