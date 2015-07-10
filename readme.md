@@ -29,7 +29,7 @@ Aqui temos uma descrição de uso de cada directorio/arquivo. Se você deseja sa
  * Configurações para softwares como Solr, Apache, MySQL etc. Preferencialmente utilizando Ansible, Puppet ou Chef.
 * [.gitignore](https://github.com/handrus/drupal-boilerplate/blob/kraftwagen/.gitignore)
  * Contém a lista de arquivos que normalmente deve ser ignorados pelo versionamento.
-* [Kraftwagenrc](https://github.com/TallerWebSolutions/drupal-boilerplate/blob/kraftwagen/kraftwagenrc.php)
+* [Kraftwagenrc](https://github.com/handrus/drupal-boilerplate/blob/kraftwagen/kraftwagenrc.php)
  * Contains configurations to use Kraftwagen, by default only overwrite the dir build to docroot in order to provide easier integration with Acquia.
 
 Built by Robots&trade;
